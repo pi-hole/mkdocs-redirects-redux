@@ -93,7 +93,7 @@ class RedirectPlugin(BasePlugin):
         # Build a dict of known document pages to validate against later
         self.doc_pages = {}
         for page in files.documentation_pages():  # object type: mkdocs.structure.files.File
-            self.doc_pages[page.src_path] = page
+            self.doc_pages[page.src_path.replace('\\', '/')] = page
 
     # Create HTML files for redirects after site dir has been built
     def on_post_build(self, config, **kwargs):
@@ -110,7 +110,7 @@ class RedirectPlugin(BasePlugin):
 
             # Internal document targets require a leading '/' to resolve properly.
             elif page_new in self.doc_pages:
-                dest_path = '/' + self.doc_pages[page_new].dest_path
+                dest_path = '/' + self.doc_pages[page_new].dest_path.replace('\\', '/')
 
                 # If use_directory_urls is set, redirect to the directory, not the HTML file
                 if use_directory_urls:
