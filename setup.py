@@ -13,7 +13,7 @@ setup(
     long_description=read('README.md'),
     long_description_content_type="text/markdown",
     keywords='mkdocs redirect',
-    url='https://github.com/datarobot/mkdocs-redirects',
+    url='https://github.com/pi-hole/mkdocs-redirects-redux',
     author='Dustin Burke',
     author_email='dustin@datarobot.com',
     license='MIT',

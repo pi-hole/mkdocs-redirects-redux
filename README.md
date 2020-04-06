@@ -1,6 +1,8 @@
-# mkdocs-redirects
+# mkdocs-redirects-redux
 
 Plugin for [`mkdocs`](https://www.mkdocs.org/) to create page redirects (e.g. for moved/renamed pages).
+
+**This is a fork of <https://github.com/datarobot/mkdocs-redirects>**
 
 ## Installing
 
@@ -9,7 +11,7 @@ Plugin for [`mkdocs`](https://www.mkdocs.org/) to create page redirects (e.g. fo
 Install with pip:
 
 ```bash
-pip install mkdocs-redirects
+pip install mkdocs-redirects-redux
 ```
 
 ## Using
@@ -55,7 +57,7 @@ This mimics the behavior of how MkDocs builds the site dir without this plugin.
 ## Contributing
 
 - Pull Requests are welcome.
-- File bugs and suggestions in the [Github Issues tracker](https://github.com/datarobot/mkdocs-redirects/issues).
+- File bugs and suggestions in the [GitHub Issues tracker](https://github.com/pi-hole/mkdocs-redirects-redux/issues).
 
 ## Releasing
 
