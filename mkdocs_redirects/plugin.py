@@ -110,7 +110,7 @@ class RedirectPlugin(BasePlugin):
 
             # Internal document targets require a leading '/' to resolve properly.
             elif page_new in self.doc_pages:
-                dest_path = '/' + self.doc_pages[page_new].dest_path
+                dest_path = os.path.sep + self.doc_pages[page_new].dest_path
 
                 # If use_directory_urls is set, redirect to the directory, not the HTML file
                 if use_directory_urls:
